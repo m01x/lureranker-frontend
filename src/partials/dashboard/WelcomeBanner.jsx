@@ -1,16 +1,7 @@
 import React from 'react';
+import { greetings } from '../../helpers';
 
 function WelcomeBanner() {
-
-  const randomGreeting = () => {
-    const greetings = [
-      '¡Hola de nuevo!, ',
-      '¡Bienvenido de vuelta!, ',
-      '¡Hola!, ',
-      '¡Me alegra verte!, ',
-      '¡Hey!, todo bien '];
-    return greetings[Math.floor(Math.random() * greetings.length)];
-  };
   
   return (
     <div className="relative bg-indigo-200 dark:bg-indigo-500 p-4 sm:p-6 rounded-sm overflow-hidden mb-8">
@@ -58,8 +49,8 @@ function WelcomeBanner() {
 
       {/* Content */}
       <div className="relative">
-        <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">{`${randomGreeting()}`}Flavio Ortiz</h1>
-        <p className="dark:text-indigo-200">📌Iquique , Despejado☀️ - 22c. | Buenas condiciones de pesca.</p>
+        <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-1">{`${greetings()}`}Flavio Ortiz</h1>
+        <p className="dark:text-indigo-200">33 🎖️ - Pescador Iniciado</p>
       </div>
     </div>
   );
